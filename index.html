@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludiflex | Login & Registration</title>
+    <link rel="stylesheet" href="./cs/bootstrap.min.css">
+    <link rel="stylesheet" href="./cs/style.css">
+    <link rel="shortcut icon" href="./images/favicon_1200x1200.webp" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./fontawesome-free-6.5.2-web/css/all.min.css">
+    <meta name="google-signin-client_id" content="310905991491-417rqe0fd5atlbf7jijksu8efha27k5r.apps.googleusercontent.com">
+</head>
+<body>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v20.0&appId=1607985953385639" nonce="Rbg9KkPV"></script>
+    <div class="wrapper  justify-content-center align-items-center">
+        <nav class="nav position-static top-0 d-flex w-100 justify-content-around align-items-center">
+            <div class="nav-logo">
+                <img class="logo-img" src="./images/mountain-logo-png.webp" alt="Logo">
+            </div>
+            <div class="nav-menu">
+                <!-- <ul class="d-flex list-unstyled">
+                    <li><a href="#" class="link-active">Home</a></li>
+                    <li><a href="#" class="link">Blog</a></li>
+                    <li><a href="#" class="link">Services</a></li>
+                    <li><a href="#" class="link">About</a></li>
+                </ul> -->
+            </div>
+            <div class="nav-button d-flex">
+                <button class="btn me-2"><a class="text-dark" href="./pages/login.html">Sign In</a></button>
+                <button class="btn">Sign Up</button>
+            </div>
+            <!-- <div class="nav-menu-btn">
+                <i class="bx bx-menu"></i>
+            </div> -->
+        </nav>
+        
+        <div class="my-5 form-box">
+            <div class="register-container" id="register">
+                <div class="top mt-2 text-center">
+                    <span>Have an account? <a href="./pages/login.html" id="loginLink">Login</a></span>
+                    <header>Sign Up</header>
+                </div>
+                <div class="two-forms">
+                    <div class="input-box">
+                        <input oninput="validateUser('firstName')" type="text" id="firstName" class="input-field text-white" placeholder="Firstname">
+                        <i class="bx bx-user"></i>
+                    </div>
+                    <div class="input-box">
+                        <input oninput="validateUser('lastName')" type="text" id="lastName" class="input-field text-white" placeholder="Lastname">
+                        <i class="bx bx-user"></i>
+                    </div>
+                    <div class="input-box">
+                        <input oninput="validateUser('email')" type="email" id="email" class="input-field text-white" placeholder="Email">
+                        <i class="bx bx-envelope"></i>
+                    </div>
+                    <div class="input-box position-relative">
+                        <input oninput="validateUser('password')" type="password" id="password" class="input-field text-white" placeholder="Password">
+                        <i class="bx bx-lock-alt"></i>
+                        <div class="eye">
+                            <i id="showPass" onclick="togglePasswordVisibility('password', 'showPass')" class="fa-regular  text-white fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <input id="registerBtn" type="submit" class="submit" value="Register">
+                    </div>
+                  
+                    <div class="two-col">
+                        <div class="one">
+                            <input type="checkbox" id="register-check">
+                            <label class="text-white" for="register-check"> Remember Me</label>
+                        </div>
+                        <div class="two">
+                            <label><a href="#">Terms & Conditions</a></label>
+                        </div>
+                    </div>
+                    <!-- Social Sign-In Buttons -->
+                    <div class="social-sign-in mt-3 text-center">
+                        <p class="text-white">Or sign in with</p>
+                        <button class="btn btn-primary me-2" id="facebookSignIn">
+                            <i class="fab fa-facebook-f"></i> Facebook
+                        </button>
+                        <button class="btn btn-danger" id="gmailSignIn">
+                            <i class="fab fa-google"></i> Gmail
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+
+</body>
+</html>

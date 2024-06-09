@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../images/jake-weirick-bLTd_HYFHGg-unsplash.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    min-height: 110vh;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.nav {
+    height: 6.25rem;
+    line-height: 6.25rem;
+    background: linear-gradient(rgba(39, 39, 39, 0.6), transparent);
+}
+
+.nav-logo p {
+    font-size: 1.5625rem;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+.link {
+    font-weight: 500;
+    color: white;
+    padding-bottom: 0.975rem;
+    margin: 0 1.5625rem;
+    position: relative;
+}
+
+.link::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    transition: width 0.5s;
+}
+
+.link:hover::before, .link-active::before {
+    width: 90%;
+}
+
+.nav-button .btn {
+    width: 8.125rem;
+    height: 2.25rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: none;
+    border-radius: 0.975rem;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+#registerBtn {
+    margin-left: 0.975rem;
+}
+
+#loginBtn {
+    margin-left: 0.975rem;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.nav-menu-btn {
+    display: none;
+}
+
+.link-active {
+    color: white;
+}
+
+.form-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 512px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.login-container {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease-in-out;
+}
+
+.top span {
+    color: white;
+    margin-left: 5px;
+}
+
+.top span a {
+    font-weight: 500;
+    color: #fff;
+    margin-left: 5px;
+}
+
+header {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0 30px 0;
+}
+
+.input-box {
+    margin-block: 10px;
+}
+
+.input-box input {
+    border-radius: 30px;
+    padding-left: 10px;
+}
+
+.input-field {
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff !important;
+    height: 50px;
+    width: 100%;
+    z-index: 99;
+}
+
+.input-field:hover, .input-field:focus::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.input-box i {
+    position: relative;
+    top: -35px;
+    left: 17px;
+    color: #fff;
+}
+
+.submit {
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    height: 45px;
+    width: 100%;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.7);
+    transition: 0.3s ease-in-out;
+}
+
+.submit:hover {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
+.two-col {
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    margin-top: 10px;
+}
+
+.two-col .one {
+    display: flex;
+    gap: 5px;
+}
+
+.two-col label a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.two-col label a:hover {
+    text-decoration: underline;
+}
+
+
+.eye{
+    position: absolute;
+    right: 6%;
+    top: 100%;
+    z-index: 99;
+    opacity: 0.5;
+  }
+  .eye i{
+    cursor: pointer;
+  }
