@@ -13,7 +13,7 @@ loginBtn.addEventListener('click', async function() {
         console.log(hashedPassword);
         if (user.password === hashedPassword) {
             localStorage.setItem('loggedInUser', JSON.stringify(user));
-            window.location.href = '/Login-System/pages/home.html';
+            window.location.href = '/home.html';
         } else {
             Swal.fire({
                 icon: 'error',
