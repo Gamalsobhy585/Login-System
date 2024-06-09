@@ -14,7 +14,7 @@ loginBtn.addEventListener('click', async function() {
         if (user.password === hashedPassword) {
             // Save logged-in user's information in localStorage
             localStorage.setItem('loggedInUser', JSON.stringify(user));
-            window.location.href = '/pages/home.html';
+            window.location.href = './home.html'; // Use a relative path
         } else {
             Swal.fire({
                 icon: 'error',
@@ -32,6 +32,7 @@ loginBtn.addEventListener('click', async function() {
         console.log('User not found');
     }
 });
+
 
 async function hashPassword(password) {
     const encoder = new TextEncoder();
