@@ -12,9 +12,8 @@ loginBtn.addEventListener('click', async function() {
         let hashedPassword = await hashPassword(loginPassword);
         console.log(hashedPassword);
         if (user.password === hashedPassword) {
-            // Save logged-in user's information in localStorage
             localStorage.setItem('loggedInUser', JSON.stringify(user));
-            window.location.href = './home.html'; // Use a relative path
+            window.location.href = './home.html'; 
         } else {
             Swal.fire({
                 icon: 'error',

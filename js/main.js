@@ -151,7 +151,7 @@ function statusChangeCallback(response) {
         setElements(true);
         testAPI();
         // Redirect to home.html upon successful login
-        window.location.href = '/Login-System/pages/home.html';
+        window.location.href = '/pages/home.html';
     } else {
         console.log('Not authenticated');
         setElements(false);
